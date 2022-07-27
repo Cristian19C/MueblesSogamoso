@@ -1,0 +1,246 @@
+
+
+/* menu */
+.main{
+    margin: 0 5% 0 5%;
+}
+
+.main-header{
+    padding: 0px 20px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    background: #F0EDE8;
+    z-index: 230;
+    display: table;
+
+}
+
+
+.main-header__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-header__txt{
+    position: absolute;
+    padding: 17px 0px 0px 0px;
+    left: 38%;
+    color: black;
+    margin: auto;
+    font-weight: 500;
+    /* padding-left: 200px; */
+    /* display: block; */
+}
+
+.main-title{
+    margin: 0px auto;
+    padding-left: 13%;
+}
+
+.main-header__link{
+    text-decoration: none;
+    /* display: block; */
+
+
+}
+
+.main-nav{
+    position: fixed;
+    font-size: 1.4em;
+    top: -25px;
+    left: 0px;
+    width: 60%;
+    height: 110%;
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+    transition: transform .3s ease-in-out;
+    transform: translate(-110%);  
+}
+
+
+.menu__link{
+    text-decoration: none;
+    color: black;
+    width: fit-content;
+    z-index: 0;
+    transition: all 450ms ease;
+    position: relative;
+}
+
+.menu__link::after{
+    content: '';
+    position: absolute;
+    transition: width 540ms, opacity 300ms ease
+}
+
+.menu__link::before{
+    content: '';
+    position: absolute;
+    transition: width 540ms, opacity 300ms ease;
+}
+
+.menu__link::before{
+    content: attr(data);
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: rgb(0, 141, 235);
+    z-index: 1;
+    overflow: hidden;
+    text-shadow: 0 0 2px rgb(0, 141, 235);
+    transition: all 480ms ease-in-out;
+}
+
+.menu__link:hover::before{
+    width: 100%;
+    color: rgb(0, 141, 235);
+}
+
+.menu__item{
+    list-style: none;
+}
+
+.spread{
+    transform: translate(0);
+}
+
+
+.fa-bars{
+    position: absolute;
+    font-size: 1.6em;
+    display: block;
+    padding: 20px 5px;
+    margin-right: 0px;
+    cursor: pointer;
+    font-weight: 1;
+}
+
+.icons{
+    position: absolute;
+    top: 20px;
+    right: 5%;
+    margin-left: auto;
+}
+
+.icon-search{
+    /* display: block; */
+    font-size: 1.3em;
+    padding: 10px 0px;
+    font-weight: 100;
+
+}
+
+.icon-cart{
+    /* display: block; */
+    font-size: 1.2em;
+    font-weight: 100;
+}
+
+.container__general-registro{
+    position: relative;
+    top: 300px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2%;
+}
+
+.formulario__agregar{
+    border: 1px solid gray;
+    width: 500px;
+    height: 520px;
+    border-radius: 5px;
+    margin: 20px auto;
+}
+
+.formulario__title{
+    border-bottom: 1px solid gray;
+    /* height: 60px; */
+    background: rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+}
+
+.formulario__agregar input[type="text"],
+.formulario__agregar input[type="text"],
+.formulario__agregar input[type="file"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    padding: 14px 10px;
+    text-align: center;
+    border: 1px solid gray;
+    width: 400px;
+    outline: none;
+    color: black;
+    border-radius: 4px;
+}
+
+.formulario__agregar input[type="text"]:focus,
+.formulario__agregar input[type="text"]:focus,
+.formulario__agregar input[type="file"]:focus{
+    border-color: rgb(0, 141, 235);
+}
+
+label{
+    position: relative;
+    font-weight: 500;
+    left: 27%;
+}
+
+.container__buttons{
+    position: relative;
+    left: 30%;
+    margin-top: 10px;
+}
+
+.button{
+    width: 120px;
+    height: 35px;
+    text-align: center;
+    margin: -10px;
+    border: none;
+    cursor: pointer;
+}
+
+.button--success{
+    border-radius: 5px;
+    background: green;
+}
+
+.button--warning{
+    background: orange;
+}
+
+.button--info{
+    border-bottom-right-radius: 5px;
+    background: aqua;
+}
+
+.table{
+    border: 1px solid gray;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+.th__title{
+    padding: 10px; 
+    border: 1px solid gray;
+    border-collapse: collapse;
+}
+
+.td__info{
+    border-collapse: collapse;
+    border: 1px solid gray;
+    padding: 10px; 
+    
+}
