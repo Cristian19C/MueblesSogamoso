@@ -62,5 +62,6 @@
     </div>
 
     <script src="./js/menu.js"></script>
+    <script src="./js/slider.js"></script>
 </body>
 </html>
